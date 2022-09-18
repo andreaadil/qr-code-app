@@ -1,0 +1,19 @@
+.c-hide {
+    display: none;
+}
+
+.c-show {
+    display: flex;
+}
+
+.c-flex-container {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.c-input {
+    max-width:500px;
+}
+

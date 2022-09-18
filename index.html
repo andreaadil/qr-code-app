@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="c-flex-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">QR Code Generator</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+          </div>
+        </div>
+      </nav>
+
+      <!-- Generator-->
+      <section id="generator" class="container">
+        <div class="row mb-5 col-12">
+          <div id="firstCol" class="mt-5 col-md-6 mx-auto">
+            <h1 class="mb-2">QR Code Generator</h1>
+            <p class="lead">Create the perfect QR code for your project.</p>
+
+            <form id="urlForm">
+                <div class="form-group mt-3">
+                    <label for="sourceUrl" class="form-label mt-4">URL</label>
+                    <input type="url" class="form-control c-input" id="sourceUrl" aria-describedby="sourceUrl" placeholder="Enter URL">
+                    <small id="urlHelp" class="form-text text-muted">Please enter the URL you wish your QR code to point to.</small>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </form>
+          </div>
+
+          <div id="qrCol" class="c-hide mt-5 col-md-4 align-items-center justify-content-center">
+            <div>
+              <div id="preview"></div>
+              <div class="row" id="buttons">
+                <a class="btn btn-primary mt-3" id="downloadBtn" href="#">Download QR Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="bg-light">
+        <div class="container mx-auto pt-3 pb-2 text-center">
+          <p class="text-muted">Copyright &copy; QR Code Generator. All rights Reserved.</p>
+        </div>
+
+      </section>
+    </div>
+
+    
+    <script src="qr-code.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
